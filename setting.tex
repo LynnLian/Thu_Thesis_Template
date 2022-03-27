@@ -1,0 +1,59 @@
+
+\documentclass[12pt, a4paper, twoside, headsepline]{scrartcl}
+
+\usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[numbers, square]{natbib}
+\usepackage[fixlanguage]{babelbib}
+\usepackage{blindtext}
+\usepackage{float}
+\usepackage{acronym}
+\usepackage{setspace}
+\usepackage{eurosym}
+\usepackage{pdfpages}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage[section]{placeins}
+\usepackage[flushleft]{threeparttable}
+\usepackage{lscape}
+\usepackage{setspace}
+
+
+\selectbiblanguage{english}
+\setcounter{secnumdepth}{5}
+\definecolor{lst-gray}{rgb}{0.98,0.98,0.98}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{lst-blue}{RGB}{40,0.0,255}
+\definecolor{lst-green}{RGB}{65,128,95}
+\definecolor{lst-red}{RGB}{200,0,85}
+
+\newcommand*{\SQL}[1]{\texttt{\$#1}}
+
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\tikzset{>=latex}
+
+\usepackage{listings}
+\lstset{
+  commentstyle=\color{lst-green},
+  basicstyle=\small\ttfamily,
+  backgroundcolor=\color{lst-gray},
+  breaklines=true,
+  captionpos=b,
+  columns=fixed,
+  extendedchars=true,
+  frame=single,
+  framesep=2pt,
+  keepspaces=true,
+  keywordstyle=\color{lst-blue},
+  numbers=left,
+  numberstyle=\small\ttfamily,
+  showstringspaces=false,
+  stringstyle=\color{lst-red},
+  tabsize=2,
+}

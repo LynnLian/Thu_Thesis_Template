@@ -1,0 +1,66 @@
+
+\input{setting}
+
+\input{pages/title.tex}
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\end{titlepage}
+
+% empty page after the cover
+\EmptyPage
+
+% Roman page numbers
+\renewcommand{\thepage}{\roman{page}}
+
+\input{pages/declaration.tex}
+
+\pagebreak
+
+\input{pages/abstract.tex}
+\clearpage
+
+\input{pages/acknowledgement.tex}
+
+\pagebreak
+
+% List of Figures
+% The content will be generated automatically based on your figures in the paper
+\listoffigures
+\newpage
+
+% List of Tables
+% The content will be generated automatically based on your tables in the paper
+\listoftables
+\newpage
+
+\include{pages/abbreviations.tex}
+
+
+% Table of Contents
+\tableofcontents
+\cleardoublepage
+
+% Main part
+\renewcommand{\thepage}{\arabic{page}}
+
+% Sections
+\input{sections/01_introduction.tex}
+
+\clearpage
+
+% Bibliography
+
+\bibliography{references}
+\bibliographystyle{unsrtnat}{}
+
+
+% add appendix under it
+\appendix
+
+\clearpage
+
+
+\end{document}

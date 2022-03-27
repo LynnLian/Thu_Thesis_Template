@@ -1,0 +1,48 @@
+% !TeX root = ../main.tex
+
+
+\title{Thesis Title }
+\author{Name}
+
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+
+\renewcommand{\baselinestretch}{1.5}
+
+
+\newcommand*\EmptyPage{\newpage\null\thispagestyle{empty}\newpage}
+
+% Definition cover page with title
+\makeatletter         
+\def\@maketitle{
+
+\begin{figure}[htp]
+ \hfill
+\includegraphics[scale=0.3]{pages/logo}
+\end{figure}
+
+\begin{center}
+\Large \sffamily Bachelor thesis\\ in Bachelor Degree Program\\
+Computer Science\\
+\vfill
+{\Large \sffamily \@title } 
+\vfill
+\end{center}
+\singlespacing
+\begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+\textbf{Name, First name} & \textbf{XXXX, XXXX} \\
+Matrikelnummer & XXXXXX \\[1em]
+Address &XXXXXXXX, Ulm \\[3em]
+\textbf{Editing Period:} &
+\textbf{XX.XX.XXXX to XX.XX.XXXX} \\
+\textbf{Wintersemester / Summersemester} \\[1em]
+Submmited at & \underline{\hspace{3cm}} \\[1em]
+Signature of the student & \underline{\hspace{5cm}}
+\\[3em] 1. Supervisor &XXXXXX \\
+2. Supervisor & XXXXXXX \\
+\end{tabular}
+\pagebreak
+}
+
+
+
